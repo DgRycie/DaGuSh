@@ -10,50 +10,24 @@
     <header>
         <h1>Welcome to the Subscription page of DaGuSh</h1>
     </header>
-    <main>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_s-xclick" />
-  <input type="hidden" name="hosted_button_id" value="X926NKQARBXX4" />
-  <table>
-    <tr>
-      <td>
-        <input type="hidden" name="on0" value="Subscribe to the Site"/>
-        Subscribe to the Site
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <select name="os0">
-          <option value="1 Month">
-            1 Month € 10,00 EUR - month(s)
-          </option>
-          <option value="6 Months">
-            6 Months € 10,00 EUR - month(s)
-          </option>
-          <option value="12 Months">
-            12 Months € 120,00 EUR - year(s)
-          </option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="hidden" name="on1" value="Enter your Name"/>
-        Enter your Name
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="text" name="os1" maxLength="200" />
-      </td>
-    </tr>
-  </table>
-  <input type="hidden" name="currency_code" value="EUR" />
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Subscribe" />
-</form>
-    </main>
+  <main>
+    <p>Subscribe for Exclusive Access</p>
+
+    <!-- PayPal Subscription-knop -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick-subscriptions">
+        <input type="hidden" name="business" value="darcy.g.robert@gmail.com  ">
+        <input type="hidden" name="item_name" value="Premium Subscription">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="hidden" name="a3" value="10.00"> <!-- Prijs per periode -->
+        <input type="hidden" name="p3" value="1"> <!-- Aantal periodes (1 maand) -->
+        <input type="hidden" name="t3" value="M"> <!-- M = Maandelijks, Y = Jaarlijks -->
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="Abonneer met PayPal">
+    </form>
+</main>
+    
     <footer>
-        <p>&copy; 2025 Mijn Website</p>
+        <p>&copy; Copyright Reserved. Exclusive Access!</p>
     </footer>
 </body>
 </html>
